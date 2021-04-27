@@ -2,18 +2,12 @@
 
 document.write('This game will test our relationship and how much you know about me !!');
 document.write('<br>');
-document.write('You have 5 Funny Questions about me . ');
-document.write('If you score 5 you are my best friend if you got Zero we should know each other ASAP :)');
+document.write('You have 6 Funny Questions about me . ');
 document.write('<br>');
-document.write('This game will test our relationship and how much you know about me !!');
+document.write('If you score 6 you are my best friend if you got Zero we should know each other ASAP :)');
 document.write('<br>');
-document.write('<br>');
-document.write('You have 5 Funny Questions about me . ');
-document.write('<br>');
-document.write('<br>');
-document.write('If you score 5 you are my best friend if you got Zero we should know each other ASAP :)')
-document.write('<br>');
-document.write('<br>');
+
+
 
 alert('Welcom To My WebSite !!!');
 let userName = prompt('Please Enter Your Name !!');
@@ -188,5 +182,5 @@ else if(mark==0)
 {
         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
         alert('Your Score is ' + mark + ' , Opps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed !!');
-        document.write('Your Score is ' + mark + " , TOpps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed!!");
+        document.write('Your Score is ' + mark + " , Opps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed!!");
 }
