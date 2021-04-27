@@ -6,12 +6,13 @@ document.write('You have 6 Funny Questions about me . ');
 document.write('<br>');
 document.write('If you score 6 you are my best friend if you got Zero we should know each other ASAP :)');
 document.write('<br>');
-
+document.write('<br>');
+document.write('<br>');
 
 
 alert('Welcom To My WebSite !!!');
 let userName = prompt('Please Enter Your Name !!');
-alert('Please Anser the next 6 Quistions About Me!!!');
+alert('Please Answer the next 6 Quistions About Me!!!');
 let mark = 0;
 document.write('Does Ibrahim Love Cars ?');
 let ans1 = prompt('Does Ibrahim Love Cars ? (yes/y or no/n)').toLowerCase();
@@ -120,7 +121,7 @@ document.write('<br>');
 
 document.write('Is Ibrahim a single man ?');
 let ans6 = prompt('Is Ibrahim a single man ? (yes/y or no/n)').toLowerCase();
-if (ans6 == 'yes' || ans5 == 'y') {
+if (ans6 == 'no' || ans6 == 'n') {
         console.log("That's True ");
         alert("That's True ");
         document.write('<br>');
@@ -139,48 +140,98 @@ else {
 document.write('<br>');
 document.write('<br>');
 
+document.write('Guess how old I am ? ');
+document.write('<br>');
+let ans7= Number(prompt('Guess how old I am ? Note : You have just 4 attempts'));
+let flag=false;
 
-if (mark == 6) {
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + ' , That\'s Awesome ;you Relly Know Alot About Me !!');
-        document.write('Your Score is ' + mark + " , That's Awesome ; you Relly Know Alot About Me !!");
-}
-else if (mark==5)
+for (let i=1;i<5;i++)
 {
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + ' , That\'s close... ;you Know many things About Me !!');
-        document.write('Your Score is ' + mark + " , That\'s close... ;you Know many things About Me !!");
+        if (ans7==25)
+        {
+                alert(ans7+" That's The Right Answer");
+                document.write(ans7+" That's The Right Answer")
+                console.log(ans7+" That's The Right Answer");
+                flag=true;
+                mark++;
+                break;
+        }
+        else 
+        {
+                alert(ans7+ " Is a Wrong Answer ... Please try again !!");
+                console.log(ans7+ " Is a Wrong Answer ... Please try again !!");
+                ans7= Number(prompt('Guess how old I am ?'));
+        }
 }
-else if (mark==4)
+if(flag==false)
 {
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + ' , That\'s good... ;you need to know more About Me !!');
-        document.write('Your Score is ' + mark + " , That\'s  good... ;you need to know more About Me !!");
-}
-else if(mark==3)
-{
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + ' , That\'s good... ;you need to know more About Me !!');
-        document.write('Your Score is ' + mark + " , That\'s  good... ;you need to know more About Me !!");
-}
-
-else if(mark==2)
-{
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + ' , Mmmmmm... you need to know more about me !!');
-        document.write('Your Score is ' + mark + " , Mmmmmm... you need to know more about me !!");
+        alert("Sorry ...But you missed that !!! I'm 25 years old");
+        console.log("Sorry ...But you missed that !!! I'm 25 years old");
+        document.write("Sorry ...But you missed that !!! I'm 25 years old");
 }
 
-else if(mark==1)
-{
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + " , Don't be Dissapointed, You'll know more about me Inshallah !!");
-        document.write('Your Score is ' + mark + " , Don't be Dissapointed, You'll know more about me Inshallah !! !!");
-}
 
-else if(mark==0)
-{
-        alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
-        alert('Your Score is ' + mark + ' , Opps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed !!');
-        document.write('Your Score is ' + mark + " , Opps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed!!");
-}
+
+
+
+
+document.write('<br>');
+document.write('<br>');
+
+
+alert('Thanks ' + userName + ', click Ok to Show Your Result !!');
+
+
+alert('Your Score is ' + mark+'/7  or  ' +(mark*100)/7+'/ 100%' );
+document.write('Your Score is ' + mark+'/7  or  ' +(mark*100)/7+'/ 100%');
+
+document.write('<br>');
+document.write('<br>');
+
+
+
+
+// if (mark == 6) {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + ' , That\'s Awesome ;you Relly Know Alot About Me !!');
+//         document.write('Your Score is ' + mark + " , That's Awesome ; you Relly Know Alot About Me !!");
+// }
+// else if (mark==5)
+// {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + ' , That\'s close... ;you Know many things About Me !!');
+//         document.write('Your Score is ' + mark + " , That\'s close... ;you Know many things About Me !!");
+// }
+// else if (mark==4)
+// {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + ' , That\'s good... ;you need to know more About Me !!');
+//         document.write('Your Score is ' + mark + " , That\'s  good... ;you need to know more About Me !!");
+// }
+// else if(mark==3)
+// {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + ' , That\'s good... ;you need to know more About Me !!');
+//         document.write('Your Score is ' + mark + " , That\'s  good... ;you need to know more About Me !!");
+// }
+
+// else if(mark==2)
+// {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + ' , Mmmmmm... you need to know more about me !!');
+//         document.write('Your Score is ' + mark + " , Mmmmmm... you need to know more about me !!");
+// }
+
+// else if(mark==1)
+// {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + " , Don't be Dissapointed, You'll know more about me Inshallah !!");
+//         document.write('Your Score is ' + mark + " , Don't be Dissapointed, You'll know more about me Inshallah !! !!");
+// }
+
+// else if(mark==0)
+// {
+//         alert('Thanks ' + userName + ', click Ok to Show Your Result !!')
+//         alert('Your Score is ' + mark + ' , Opps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed !!');
+//         document.write('Your Score is ' + mark + " , Opps.. you Really dno\'t know any thing about me , Don\'t be Dissapointed!!");
+// }

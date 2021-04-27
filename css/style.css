@@ -63,3 +63,11 @@ font-family: 'Times New Roman', Times, serif;
             font-size: xx-large;
             font-family: 'Times New Roman', Times, serif;
             }
+
+h3{
+  text-align: center;
+}
+            ol  {
+              display: inline-block;
+margin-left : 45%;  
+   }       
