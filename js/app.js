@@ -2,9 +2,9 @@
 
 document.write('This game will test our relationship and how much you know about me !!');
 document.write('<br>');
-document.write('You have 6 Funny Questions about me . ');
+document.write('You have 8 Funny Questions about me . ');
 document.write('<br>');
-document.write('If you score 6 you are my best friend if you got Zero we should know each other ASAP :)');
+document.write('If you score 8 you are my best friend if you got Zero we should know each other ASAP :)');
 document.write('<br>');
 document.write('<br>');
 document.write('<br>');
@@ -12,7 +12,7 @@ document.write('<br>');
 
 alert('Welcom To My WebSite !!!');
 let userName = prompt('Please Enter Your Name !!');
-alert('Please Answer the next 6 Quistions About Me!!!');
+alert('Please Answer the next 8 Quistions About Me!!!');
 let mark = 0;
 document.write('Does Ibrahim Love Cars ?');
 let ans1 = prompt('Does Ibrahim Love Cars ? (yes/y or no/n)').toLowerCase();
@@ -145,7 +145,7 @@ document.write('<br>');
 let ans7= Number(prompt('Guess how old I am ? Note : You have just 4 attempts'));
 let flag=false;
 
-for (let i=1;i<5;i++)
+for (let i=1;i<4;i++)
 {
         if (ans7==25)
         {
@@ -179,16 +179,66 @@ document.write('<br>');
 document.write('<br>');
 
 
+
+
+
+document.write('Guess What Kind of Food i Love ? ');
+document.write('<br>');
+
+
+let food =['mansaf', ' ' ,'kabseh',' ','maqlubeh',' ','shawarma',' ','kabab'];
+let ans8 = prompt('Guess What Kind of Food i Love ? ');
+let flag2 = false;
+for( let t=1;t<6;t++){
+for (let f=0;f<food.length;f++)
+{
+ if (ans8==food[f])
+ {
+         alert('You got it !! ');
+         document.write('You got it !! ');
+         console.log('You got it !! ');
+         mark++;
+         flag2=true;
+         break;
+
+         
+
+ }
+  
+ 
+}
+    if (flag2==true){break;}
+    else
+      {
+                  ans8=prompt('Try Again ...!!!');
+                
+      }
+
+
+
+}
+
+
+if (flag2==false)
+{
+        alert('Opps ... Try harder Next Time ...');
+        alert ('The right answers is : '+food);
+        document.write('Opps ... Try harder Next Time ...');
+        document.write('<br>');
+        document.write('The right answers is : '+food);
+}
+
+document.write('<br>');
+document.write('<br>');
+
 alert('Thanks ' + userName + ', click Ok to Show Your Result !!');
 
 
-alert('Your Score is ' + mark+'/7  or  ' +(mark*100)/7+'/ 100%' );
-document.write('Your Score is ' + mark+'/7  or  ' +(mark*100)/7+'/ 100%');
+alert('Your Score is ' + mark+'/8  or  ' +(mark*100)/7+'/ 100%' );
+document.write('Your Score is ' + mark+'/8  or  ' +(mark*100)/8+'/ 100%');
 
 document.write('<br>');
 document.write('<br>');
-
-
 
 
 // if (mark == 6) {
