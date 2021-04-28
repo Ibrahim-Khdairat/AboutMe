@@ -15,7 +15,8 @@ let userName = prompt('Please Enter Your Name !!');
 alert('Please Answer the next 8 Quistions About Me!!!');
 let mark = 0;
 document.write('Does Ibrahim Love Cars ?');
-let ans1 = prompt('Does Ibrahim Love Cars ? (yes/y or no/n)').toLowerCase();
+function qustionOne()
+ {let ans1 = prompt('Does Ibrahim Love Cars ? (yes/y or no/n)').toLowerCase();
 if (ans1 == 'yes' || ans1 == 'y') {
         console.log("That's True ");
         alert("That's True ");
@@ -34,9 +35,11 @@ else {
 
 document.write('<br>');
 document.write('<br>');
-
-document.write('Does Ibrahim Love "Mansaf" ?');
-let ans2 = prompt('Does Ibrahim Love "Mansaf" ? (yes/y or no/n)').toLowerCase();
+}
+ qustionOne();
+ document.write('Does Ibrahim Love "Mansaf" ?');
+ function qustionTow()
+ {let ans2 = prompt('Does Ibrahim Love "Mansaf" ? (yes/y or no/n)').toLowerCase();
 if (ans2 == 'yes' || ans2 == 'y') {
         console.log("That's True ");
         alert("That's True ");
@@ -55,9 +58,16 @@ else {
 
 document.write('<br>');
 document.write('<br>');
+}
+qustionTow();
+
 
 document.write('Does Ibrahim Love Sleeping ?');
-let ans3 = prompt('Does Ibrahim Love Sleeping ? (yes/y or no/n)').toLowerCase();
+
+
+function qustionThree()
+{
+        let ans3 = prompt('Does Ibrahim Love Sleeping ? (yes/y or no/n)').toLowerCase();
 if (ans3 == 'yes' || ans3 == 'y') {
         console.log("That's True ");
         alert("That's True ");
@@ -75,10 +85,12 @@ else {
 }
 
 document.write('<br>');
-document.write('<br>');
+document.write('<br>');}
 
+qustionThree();
 document.write('Does Ibrahim Love Sports ?');
-let ans4 = prompt('Does Ibrahim Love Sports ?(yes/y or no/n)').toLowerCase();
+function qustionFour() 
+{let ans4 = prompt('Does Ibrahim Love Sports ?(yes/y or no/n)').toLowerCase();
 if (ans4 == 'no' || ans4 == 'n') {
         console.log("That's True ");
         alert("That's True ");
@@ -97,9 +109,13 @@ else {
 
 document.write('<br>');
 document.write('<br>');
+}
+ qustionFour();
 
 document.write('Does Ibrahim Love Waching Movies ?');
-let ans5 = prompt('Does Ibrahim Love Waching Movies ? (yes/y or no/n)').toLowerCase();
+function qustionFive()
+{
+        let ans5 = prompt('Does Ibrahim Love Waching Movies ? (yes/y or no/n)').toLowerCase();
 if (ans5 == 'yes' || ans5 == 'y') {
         console.log("That's True ");
         alert("That's True ");
@@ -118,9 +134,13 @@ else {
 
 document.write('<br>');
 document.write('<br>');
+}
+qustionFive();
 
 document.write('Is Ibrahim a single man ?');
-let ans6 = prompt('Is Ibrahim a single man ? (yes/y or no/n)').toLowerCase();
+function qustionSix()
+{
+        let ans6 = prompt('Is Ibrahim a single man ? (yes/y or no/n)').toLowerCase();
 if (ans6 == 'no' || ans6 == 'n') {
         console.log("That's True ");
         alert("That's True ");
@@ -138,11 +158,17 @@ else {
 }
 
 document.write('<br>');
-document.write('<br>');
+document.write('<br>');}
+
+qustionSix();
+
 
 document.write('Guess how old I am ? ');
+
 document.write('<br>');
-let ans7= Number(prompt('Guess how old I am ? Note : You have just 4 attempts'));
+
+function qustionSeven()
+{let ans7= Number(prompt('Guess how old I am ? Note : You have just 4 attempts'));
 let flag=false;
 
 for (let i=1;i<4;i++)
@@ -185,6 +211,11 @@ if(flag==false)
 document.write('<br>');
 document.write('<br>');
 
+}
+
+qustionSeven();
+
+
 
 
 
@@ -192,61 +223,72 @@ document.write('<br>');
 document.write('Guess What Kind of Food i Love ? ');
 document.write('<br>');
 
-
-let food =['mansaf', ' ' ,'kabseh',' ','maqlubeh',' ','shawarma',' ','kabab'];
-let ans8 = prompt('Guess What Kind of Food i Love ? ');
-let flag2 = false;
-for( let t=1;t<6;t++){
-for (let f=0;f<food.length;f++)
+function qustionEight()
 {
- if (ans8==food[f])
- {
-         alert('You got it !! ');
-         document.write('You got it !! ');
-         console.log('You got it !! ');
-         mark++;
-         flag2=true;
-         break;
-
+        let food =['mansaf', ' ' ,'kabseh',' ','maqlubeh',' ','shawarma',' ','kabab'];
+        let ans8 = prompt('Guess What Kind of Food i Love ? ');
+        let flag2 = false;
+        for( let t=1;t<6;t++){
+        for (let f=0;f<food.length;f++)
+        {
+         if (ans8==food[f])
+         {
+                 alert('You got it !! ');
+                 document.write('You got it !! ');
+                 console.log('You got it !! ');
+                 mark++;
+                 flag2=true;
+                 break;
+        
+                 
+        
+         }
+          
          
-
- }
-  
- 
-}
-    if (flag2==true){break;}
-    else
-      {
-        alert(ans8+ " Is a Wrong Answer ... Please try again !!");
-                  ans8=prompt('Try Again ...!!!');
-                
-      }
-
-
-
-}
-
-
-if (flag2==false)
-{
-        alert('Opps ... Try harder Next Time ...');
-        alert ('The right answers is : '+food);
-        document.write('Opps ... Try harder Next Time ...');
+        }
+            if (flag2==true){break;}
+            else
+              {
+                alert(ans8+ " Is a Wrong Answer ... Please try again !!");
+                          ans8=prompt('Try Again ...!!!');
+                        
+              }
+        
+        
+        
+        }
+        
+        
+        if (flag2==false)
+        {
+                alert('Opps ... Try harder Next Time ...');
+                alert ('The right answers is : '+food);
+                document.write('Opps ... Try harder Next Time ...');
+                document.write('<br>');
+                document.write('The right answers is : '+food);
+        }
+        
         document.write('<br>');
-        document.write('The right answers is : '+food);
+        document.write('<br>');
+
+
 }
 
-document.write('<br>');
-document.write('<br>');
+qustionEight();
+
+
 
 alert('Thanks ' + userName + ', click Ok to Show Your Result !!');
-
-
-alert('Your Score is ' + mark+'/8  or  ' +(mark*100)/7+'/ 100%' );
+function marks()
+{
+        alert('Your Score is ' + mark+'/8  or  ' +(mark*100)/7+'/ 100%' );
 document.write('Your Score is ' + mark+'/8  or  ' +(mark*100)/8+'/ 100%');
 
 document.write('<br>');
 document.write('<br>');
+}
+marks();
+
 
 
 // if (mark == 6) {
