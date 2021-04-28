@@ -210,6 +210,7 @@ for (let f=0;f<food.length;f++)
     if (flag2==true){break;}
     else
       {
+        alert(ans8+ " Is a Wrong Answer ... Please try again !!");
                   ans8=prompt('Try Again ...!!!');
                 
       }
