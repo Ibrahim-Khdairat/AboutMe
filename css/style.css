@@ -81,7 +81,8 @@ ul {
     float: right;
   }
   li a {
-    margin-left:50px;
+    font-family: 'New Tegomin', serif;
+    margin-left:30px;
     display: inline-block;
    font-size: 20px;
     color: #000;
@@ -97,27 +98,44 @@ ul {
     color: white;
     height: 28px;
   }
+ li a:visited
+  {
+    color:deeppink;
+  }
+
+  /* li a:linked
+  {
+    color:green;
+  } */
 
   .about{ background-color: cornsilk;
 font-size: xx-large;
-font-family: 'Times New Roman', Times, serif;
+
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'New Tegomin', serif;
 margin-top: 500px;
 
 }
 .contact{ background-color: cornsilk;
     font-size: xx-large;
     font-family: 'Times New Roman', Times, serif;
+    font-family: 'Josefin Sans', sans-serif;
+font-family: 'New Tegomin', serif;
     margin-top: 500px;
     }
     .education{ background-color: cornsilk;
         font-size: xx-large;
         font-family: 'Times New Roman', Times, serif;
+        font-family: 'Josefin Sans', sans-serif;
+font-family: 'New Tegomin', serif;
         margin-top: 500px;
 
         }
         .experince{ background-color: cornsilk;
             font-size: xx-large;
             font-family: 'Times New Roman', Times, serif;
+            font-family: 'Josefin Sans', sans-serif;
+font-family: 'New Tegomin', serif;
             margin-top: 500px;
 
             }
@@ -153,5 +171,6 @@ ol li
 
 
 }
+
 
    
